@@ -11,7 +11,7 @@
 }
 
 body{
-    background-image: url(rate.png);
+    background-image: url('../image/rate.png');
     background-size: cover;
     min-height: 100vh;
     width: 100%;
