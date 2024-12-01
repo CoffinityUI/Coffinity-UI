@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate and Preview</title>
+    <link rel="stylesheet" href="rate.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+<body>
+
+<div class="header">
+    <nav id="sidebar">
+        <div class="sidebar-ui">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo coffinity.png">
+                </a>
+            </div>
+            <div class="sidebar">
+                <ul class="side-list">
+                    <li class="side-item sub-menu"><a>Location</a>
+                        <ul>
+                            <li><a href="margonda.html">Margonda</a></li>
+                            <li><a href="kukusan.html">Kukusan</a></li>
+                        </ul>
+                    </li>
+                    <li class="side-item"><a href="rate.html">Rate and Review</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="toggle-menu" id="toggle-click">
+        <i class="fa fa-bars"></i>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('ul li').click(function(){
+                $(this).siblings().removeClass('active');
+                $(this).toggleClass('active');
+            })
+        })
+
+        const sidebar = document.getElementById('sidebar');
+        const btn = document.getElementById('toggle-click');
+        btn.addEventListener('click', () => {
+            sidebar.classList.toggle('active')
+            btn.classList.toggle('active')
+        })
+    </script>
+</div>
+
+
+<div class="cafe">
+    <ul>
+        <li><a href="cafe1.html">KYLAU SPACE</a></li>
+    </ul>
+</div>
+
+<div class="cafe2">
+    <ul>
+        <li><a href="cafe1.html">COFFITH</a></li>
+    </ul>
+</div>
+
+<div class="cafe3">
+    <ul>
+        <li><a href="cafe1.html">WALKING DRUMS</a></li>
+    </ul>
+</div>
+
+<div class="cafe4">
+    <ul>
+        <li><a href="cafe1.html"> WHATS UP CAFE</a></li>
+    </ul>
+</div>
+
+<div class="cafe5">
+    <ul>
+        <li><a href="cafe1.html">KOPI BRUMBUN</a></li>
+    </ul>
+</div>
+
+<div class="cafe6">
+    <ul>
+        <li><a href="cafe1.html">COFFEE TOFFEE</a></li>
+    </ul>
+</div>
+
+<div class="cafe7">
+    <ul>
+        <li><a href="cafe1.html"> SUAR RUANG</a></li>
+    </ul>
+</div>
+
+<div class="cafe8">
+    <ul>
+        <li><a href="cafe1.html">LE TÚSA</a></li>
+    </ul>
+</div>
+
+<div class="cafe9">
+    <ul>
+        <li><a href="cafe1.html">TAMELO ATAP CAFE</a></li>
+    </ul>
+</div>
+
+<div class="cafe10">
+    <ul>
+        <li><a href="cafe1.html"> KEDAI KOPI FORJI</a></li>
+    </ul>
+</div>
+
+<div class="cafe11">
+    <ul>
+        <li><a href="cafe1.html">SAHUTA COFFEE</a></li>
+    </ul>
+</div>
+
+<div class="cafe12">
+    <ul>
+        <li><a href="cafe1.html">GRAHA COFFEE</a></li>
+    </ul>
+</div>
+
+<div class="cafe13">
+    <ul>
+        <li><a href="cafe1.html">BENING COFFEE</a></li>
+    </ul>
+</div>
+
+<div class="cafe14">
+    <ul>
+        <li><a href="cafe1.html">E+E KITCHEN</a></li>
+    </ul>
+</div>
+
+
+
+
+
+</body>
+</html>

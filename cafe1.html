@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate and Review Kylau Space</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="js/script.js" defer></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background: #AAA;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .wrapper{
+            background: #FFF;
+            padding: 2rem;
+            max-width: 575px;
+            width: 100%;
+            border-radius: .75rem;
+            box-shadow: 8px 8px 30px rgba(0, 0, 0, .05);
+            text-align: center;
+        }
+
+        .wrapper h3{
+            font-size: 55px;
+            margin-bottom: 1rem;
+        }
+
+        .rating{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-gap: .8rem;
+        }
+
+        .icons{
+            font-size: 3rem;
+        }
+
+        textarea{
+            width: 100%;
+            background: #FFF;
+            padding: 1rem;
+            border-radius: .75rem;
+        }
+
+        .btn-group{
+            display: flex;
+            grid-gap: .5rem;
+            align-items: center;
+        }
+
+        .btn-group .btn{
+            padding: .75rem 1rem;
+            border-radius: .5rem;
+            border: none;
+            cursor: pointer;
+            font-size: .875rem;
+            font-weight: 500;
+        }
+
+        .btn-group .btn.submit{
+            background: #4383ff;
+            color: #fff ;
+        }
+
+        .btn-group .btn.submit:hover{
+            background: #3278ff;
+        }
+
+        .btn-group .btn.cancel{
+            background: #fff;
+            color: #4383ff;
+        }
+
+        .btn-group .btn.cancel:hover{
+            background: rgb(241, 239, 236);
+        }
+
+        .wrapper .rating input[type="radio"]{
+            display: none;
+        }
+
+        .wrapper .rating .icons{
+            padding: 10px;
+        }
+
+        .wrapper .rating .icons label{
+            font-size: 50px;
+            cursor: pointer;
+            opacity: .4;
+        }
+
+        .wrapper .rating #btn1:checked ~ .icons label:nth-child(1),
+        .wrapper .rating #btn2:checked ~ .icons label:nth-child(2),
+        .wrapper .rating #btn3:checked ~ .icons label:nth-child(3),
+        .wrapper .rating #btn4:checked ~ .icons label:nth-child(4),
+        .wrapper .rating #btn5:checked ~ .icons label:nth-child(5),
+        .wrapper .rating .icons label:hover{
+            opacity: 1;
+            font-size: 60px;
+        }
+        .x{
+            float: left;
+            font-size: 25px;
+            color: black;
+        }
+        
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="x">
+        <a href="rate.html">
+            <i class="fas fa-times"></i>
+        </a>
+    </div>
+    <h3>Rate and Review</h3>
+    <form action="#">
+
+
+        <div class="rating">
+            <input type="radio" name="buttons" id="btn1">
+            <input type="radio" name="buttons" id="btn2">
+            <input type="radio" name="buttons" id="btn3">
+            <input type="radio" name="buttons" id="btn4">
+            <input type="radio" name="buttons" id="btn5">
+
+            <div class="icons">
+                <label for="btn1">😧</label>
+                <label for="btn2">🙁</label>
+                <label for="btn3">😐</label>
+                <label for="btn4">🙂</label>
+                <label for="btn5">😀</label>
+            </div>
+
+        </div>
+        
+        <textarea name="opinion" cols="30" rows="5" placeholder="Write your thoughts here..."></textarea>
+        <div class="btn-group">
+            <button type="submit" class="btn submit">Submit</button>
+            <button class="btn cancel">Cancel</button>
+        </div>
+
+    
+    </form>
+</div>
+
+
+
+
+
+</body>
+</html>
